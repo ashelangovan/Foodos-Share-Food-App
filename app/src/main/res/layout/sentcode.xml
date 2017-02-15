@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+
+    <TextView
+        android:id="@+id/ntextView5"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UserName:"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_below="@+id/textView21"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/ntextView2"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity (In Members):"
+        android:layout_below="@+id/textView22"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/ntextView3"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Userinfo:"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="20dp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView24"
+        android:layout_below="@+id/ntextView3"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_alignEnd="@+id/ntextView5" />
+
+    <TextView
+        android:id="@+id/ntextView1"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HomeCode:"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/textView24"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView21"
+        android:textSize="18sp"
+        android:textColor="@color/cardview_dark_background"
+        android:hint="TextView"
+        android:layout_below="@+id/ntextView1"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/ntextView5" />
+
+    <TextView
+        android:textColor="@color/cardview_dark_background"
+        android:hint="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView23"
+        android:textSize="18dp"
+        android:layout_below="@+id/ntextView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/textView22"
+        android:textSize="18sp"
+        android:textColor="@color/cardview_dark_background"
+        android:hint="TextView"
+        android:layout_below="@+id/ntextView5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/ntextView4"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message:"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="20dp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/textView23"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/textView20"
+        android:layout_width="200dp"
+        android:textSize="18sp"
+        android:textColor="@color/cardview_dark_background"
+        android:hint="TextView"
+        android:layout_below="@+id/ntextView4"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

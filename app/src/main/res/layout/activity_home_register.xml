@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:background="#2c3e50"
+    android:weightSum="1">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_weight="0.18"
+        android:src="@drawable/homereg"
+        android:layout_height="90dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/textView3"
+        android:textColorHint="#2ecc71"
+        android:textColor="#2ecc71"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/etUsername"
+        android:layout_alignParentStart="true"
+        android:textSize="25dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:textColorHint="#2ecc71"
+        android:textColor="#2ecc71"
+        android:id="@+id/etName"
+        android:hint="Email"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/etUsername"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etUsername"
+        android:hint="Username"
+        android:textColorHint="#2ecc71"
+        android:textColor="#2ecc71"
+        android:layout_above="@+id/etPassword"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="30dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etPassword"
+        android:hint="Password"
+        android:textColorHint="#2ecc71"
+        android:textColor="#2ecc71"
+        android:layout_above="@+id/etAge"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="30dp" />
+
+    <EditText
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textColorHint="#2ecc71"
+        android:textColor="#2ecc71"
+        android:ems="10"
+        android:id="@+id/etAge"
+        android:hint="Number"
+        android:layout_above="@+id/bRegister"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Register"
+        android:id="@+id/bRegister"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:background="#3ed37d" />
+
+</LinearLayout>

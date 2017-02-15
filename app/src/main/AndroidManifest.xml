@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.freya.loginfoodos">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="@string/google_maps_key" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/applogo"
+        android:label="FOODOS"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDnwLF2-WfK8cVZt9OoDYJ9Y8kspXhEHfI" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserAreaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_map"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sent"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Recycle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Firstdetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Seconddetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Thirddetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Navigation"
+            android:label="@string/title_activity_navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DisplayContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Allhome"
+            android:label="@string/title_activity_allhome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Shome"
+            android:label="@string/title_activity_shome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Homemap"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Logout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Comm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeLogin"
+            android:label="@string/title_activity_home_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeRegister"
+            android:label="@string/title_activity_home_register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DummyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".message"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".receive"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".notifycode"
+            android:label="@string/title_activity_notifycode" />
+        <activity android:name=".HomeUpdate" />
+        <activity android:name=".Notifyhome" />
+        <activity android:name=".Acceptedhome"></activity>
+    </application>
+
+</manifest>

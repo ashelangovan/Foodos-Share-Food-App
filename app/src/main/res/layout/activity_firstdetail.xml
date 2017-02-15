@@ -1,0 +1,282 @@
+<android.support.design.widget.CoordinatorLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#abebc6"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin_right"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_action_user"
+        android:elevation="6dp"
+
+        android:id="@+id/fab_plus"
+        app:pressedTranslationZ="16dp"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin_right"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/ic_action_whatsapp"
+        android:elevation="6dp"
+        android:onClick="newchat"
+        android:id="@+id/fab_wassup"
+        app:pressedTranslationZ="16dp"
+        app:backgroundTint="@color/fab_1"
+        android:visibility="invisible"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin_right"
+        android:layout_marginBottom="180dp"
+        android:src="@drawable/ic_action_message"
+        android:elevation="6dp"
+        android:id="@+id/fab_msg"
+        app:pressedTranslationZ="16dp"
+        android:onClick="msg"
+        app:backgroundTint="@color/fab_2"
+        android:visibility="invisible"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin_right"
+        android:layout_marginBottom="260dp"
+        android:src="@drawable/ic_action_name"
+        android:elevation="6dp"
+        android:id="@+id/fab_call"
+        app:pressedTranslationZ="16dp"
+        app:backgroundTint="@color/fab_3"
+        android:visibility="invisible"
+        android:onClick="Call"
+        />
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#abebc6">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="ANNAI ILLAM,MOGAPPAIR"
+                android:id="@+id/tit"
+                android:textAlignment="center"
+                android:textColor="#ff0101"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_height="60dp" />
+
+
+            <ViewFlipper
+                android:id="@+id/flipper1"
+                android:layout_width="wrap_content"
+                android:layout_height="270dp"
+                android:flipInterval="2000"
+                android:inAnimation="@anim/slide_in_right"
+                android:outAnimation="@anim/slide_out_left"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tit">
+
+                <ImageView
+                    android:src="@drawable/i4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/str_img4"
+                    android:layout_gravity="center_horizontal" />
+
+                <ImageView
+                    android:src="@drawable/i1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/str_img1"
+                    android:layout_gravity="center_horizontal" />
+
+                <ImageView
+                    android:src="@drawable/i2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/str_img2"
+                    android:layout_gravity="center_horizontal" />
+
+                <ImageView
+                    android:src="@drawable/i3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/str_img3"
+                    android:layout_gravity="center_horizontal" />
+
+            </ViewFlipper>
+           <Button
+                android:id="@+id/expandableButton1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ba1f04"
+                android:layout_below="@id/flipper1"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:onClick="expandableButton1"
+                android:paddingRight="10dp"
+                android:text="About"
+                android:textColor="#fff"
+                android:layout_marginTop="20dp" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/expandableButton1"
+                android:background="#90ba1f04"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_interpolator="bounce"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Annai illam is a registered voluntary organization started in the year of 2003 in Chennai District, Tamilnadu, India. It was legally registered under Indian Trust Act 1882 for PUblic, Social, Educational and Charitable purpose. After  it was also registered with Ministryof Home Affairs, Govt of India under FCR Act and also registered with the Ministry                    of Finance under Income Tax Act Section 12 A,80 G exemption." />
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+            <Button
+                android:id="@+id/expandableButton2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expandableLayout1"
+                android:background="#ba1f04"
+                android:drawableRight="@android:drawable/arrow_up_float"
+
+                android:paddingRight="10dp"
+
+                android:textColor="#fff" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/expandableButton2"
+                android:background="#90b77803"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_interpolator="bounce"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Android library for creating an expandable and collapsible to full screen view inside a viewgroup composition. Expandable Layout provides an easy way to create a view called header with an expandable view. Views are external layout to allow a maximum of customization." />
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="20dp"
+                android:onClick="loc"
+                app:ael_interpolator="bounce"
+                android:layout_below="@id/expandableButton2">  <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/thumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/wallpaper" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/thumbnail"
+                    android:maxLines="3"
+                    android:padding="8dp"
+                    android:text="----------LOCATION-----------"
+                    android:textColor="#222"
+                    android:textStyle="bold"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:maxLines="3"
+                    android:padding="8dp"
+
+                    android:textColor="#666"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/card_view2"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="20dp"
+                android:layout_below="@id/card_view"
+                android:onClick="details">  <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/thumbnail2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/contact" />
+
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/thumbnail2"
+                    android:maxLines="3"
+                    android:padding="8dp"
+                    android:text=" -----------CONTACTS----------"
+                    android:textColor="#222"
+                    android:textStyle="bold"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title2"
+                    android:maxLines="3"
+                    android:padding="8dp"
+
+                    android:textColor="#666"
+                    android:textSize="14dp" />
+
+
+
+            </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:text="HOMECODE:foodos001"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:id="@+id/textView29"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        tools:context=".UserAreaActivity"
+    android:background="#2c3e50"
+    android:orientation="vertical"
+        android:weightSum="1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/userlogin"
+        android:layout_weight="0.30"
+        android:layout_height="130dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/pass_layout"
+        android:textColorHint="#2ecc71"
+        android:textColor="#2ecc71"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Username"
+            android:textColorHint="#2ecc71"
+            android:textColor="#2ecc71"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentEnd="true" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/email_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#2ecc71"
+        android:textColor="#2ecc71"
+        android:layout_marginTop="20dp">
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="#2ecc71"
+            android:textColor="#2ecc71"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+    android:id="@+id/bSignIn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Sign In"
+    android:background="#3ed37d"
+    android:layout_above="@+id/textView5"
+    android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don&apos;t have a account?"
+        android:id="@+id/textView5"
+        android:textColorHint="#2ecc71"
+        android:textColor="#2ecc71"
+        android:layout_above="@+id/tvRegisterLink"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Register Here"
+        android:id="@+id/tvRegisterLink"
+        android:layout_alignParentBottom="true"
+        android:background="#2ecc71"
+        android:layout_alignEnd="@+id/bSignIn"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+
+
+
+
+
+</LinearLayout>

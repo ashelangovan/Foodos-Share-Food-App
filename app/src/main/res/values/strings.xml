@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">LoginFoodos</string>
+    <string-array name="homename">
+        <item>"Annai Illam"</item>
+        <item>"Avvai Aashram"</item>
+        <item>"Bala Gurukulam"</item>
+    </string-array>
+    <string-array name="location">
+        <item>"Mogappair,Chennai"</item>
+        <item>"Besant Nagar,Chennai"</item>
+        <item>"Ambattur,Chennai"</item>
+    </string-array>
+    <string name="blank">Welcome to our app</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="search_hint">SEARCH</string>
+    <string name="app_id">1218528391526045</string>
+    <string name="str_img1">Image1</string>
+    <string name="str_img2">Image2</string>
+    <string name="str_img3">Image3</string>
+    <string name="str_img4">Image4</string>
+    <string name="str_img5">Image5</string>
+
+    <string name="str_btn_start">Start SlideShow</string>
+    <string name="str_btn_stop">Stop SlideShow</string>
+    <string name="title_activity_log">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_navigation">Navigation</string>
+
+    <string name="favorites">Favorites</string>
+    <string name="products">Products</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_map">MAP</string>
+    <string name="google_maps_key">AIzaSyDnwLF2-WfK8cVZt9OoDYJ9Y8kspXhEHfI</string>
+    <string name="title_activity_allhome">Map</string>
+    <string name="title_activity_shome">Map</string>
+    <string name="title_activity_home_login">HomeLogin</string>
+    <string name="title_activity_home_register">HomeRegister</string>
+    <string name="title_activity_notifycode">notifycode</string>
+</resources>
